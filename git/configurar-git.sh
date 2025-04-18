@@ -42,8 +42,10 @@ else
     git --version
     echo
     echo "⚙️ ->>>>> Configurando usuario y correo"
-    git config --global user.name "nexaplaform";
-    git config --global user.email "nexaplaform@gmail.com";
+    read -p "📝 Ingrese el nombre o el usuario para git: " git_user
+    read -p "📝 Ingrese la dirección de correo para git " git_email
+    git config --global user.name "$git_user";
+    git config --global user.email "$git_email";
 fi
 
 git config --list;
