@@ -11,3 +11,17 @@ status=$?
 
 # Ejecutar el archivo para la configuracion de git
 ./git/configurar-git.sh
+status=$?
+
+# Intentar darle permisos de ejecución al script
+chmod +x docker/install-docker.sh
+status=$?
+
+# Invocacion para evaluar la respuesta del proceso
+./update-message.sh $status "otorgar permisos al archivo configurar-git.sh"
+
+# Ejecutar el archivo para la instalacion de docker
+./docker/install-docker.sh
+status=$?
+
+
