@@ -1,0 +1,18 @@
+--Pasos para instalar git (Ubuntu)
+    
+    * Comandos:
+    -- sudo apt update
+    -- sudo apt install git
+    -- git --version
+
+-- Verificacion de la version instalada
+    
+    * Comando:
+    -- git --version   
+    -- git version 2.43.0
+
+-- Configurar nombre y correco de git
+
+    * Comandos:
+    -- git config --global user.email "you@example.com"
+    -- git config --global user.name "Tu Nombre"
