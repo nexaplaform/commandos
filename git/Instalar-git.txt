@@ -5,13 +5,13 @@
     -- sudo apt install git
     -- git --version
 
--- Verificacion de la version instalada
+-- Verificación de la version instalada
     
     * Comando:
     -- git --version   
     -- git version 2.43.0
 
--- Configurar nombre y correco de git
+-- Configurar nombre y correo de git
 
     * Comandos:
     -- git config --global user.email "you@example.com"

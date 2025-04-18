@@ -1,0 +1,137 @@
+Iconos para Éxito, Aprobación, y Completado:
+
+    ✅ Marca de verificación (éxito)
+
+    ✔️ Marca de verificación (check)
+
+    🎉 Confeti (celebración)
+
+    🌟 Estrella (destacado)
+
+    🚀 Cohete (avanzando o completado)
+
+    💪 Brazo flexionado (fuerza, éxito)
+
+    🏆 Trofeo (logro)
+
+    🏅 Medalla
+
+    🎯 Diana (objetivo alcanzado)
+
+    🌈 Arco iris (final feliz)
+
+    🥳 Cara de fiesta
+
+    🎶 Notas musicales (éxito en música o tarea)
+
+Iconos para Error, Fallos, y Advertencias:
+
+    ❌ Cruz roja (error)
+
+    🛑 Señal de alto (parar, advertencia)
+
+    ⚠️ Advertencia (triángulo amarillo)
+
+    ⛔ Prohibido (bloqueo)
+
+    💥 Explosión (error grave)
+
+    🚫 Círculo con barra (bloqueo o no permitido)
+
+    🔴 Círculo rojo (problema)
+
+    🐞 Bicho (error de programación)
+
+Iconos para Estado o Proceso:
+
+    🔄 Flechas (en proceso, actualización)
+
+    ⏳ Reloj de arena (esperando, en progreso)
+
+    🕒 Reloj (trabajo en progreso)
+
+    💡 Bombilla (idea, encendido)
+
+    🔧 Llave inglesa (herramientas, configuración)
+
+    ⚙️ Engranaje (configuración)
+
+    🛠️ Martillo y llave (trabajo técnico, reparación)
+
+    🧰 Caja de herramientas
+
+    📝 Papel y lápiz (editar, escribir)
+
+Iconos para Información General:
+
+    ℹ️ Símbolo de información
+
+    🔍 Lupa (búsqueda)
+
+    📄 Hoja de papel (documento)
+
+    📑 Marcadores (libros, documentos)
+
+    💬 Burbuja de diálogo (comentarios, chat)
+
+    📨 Sobre con carta (correo)
+
+    📧 Sobre (correo electrónico)
+
+    📌 Pin (marcar algo importante)
+
+    🔖 Etiqueta (marcar, etiquetar)
+
+Iconos para Peligro y Precaución:
+
+    ⚠️ Advertencia (triángulo amarillo)
+
+    🚨 Sirena (alerta de emergencia)
+
+    🔥 Fuego (peligro, urgencia)
+
+    🧯 Extintor (emergencia, apagar fuego)
+
+    ☠️ Calavera (peligro mortal)
+
+Iconos para Carga y Espera:
+
+    ⏳ Reloj de arena (espera)
+
+    🔄 Flechas circulares (proceso continuo)
+
+    🌀 Remolino (proceso en curso)
+
+    ⏱️ Cronómetro (tiempo)
+
+Iconos para Componentes de Computadora o Tecnología:
+
+    💻 Computadora portátil (trabajo, tecnología)
+
+    🖥️ Pantalla de computadora
+
+    📱 Teléfono móvil (dispositivo móvil)
+
+    🖱️ Raton (click, acción)
+
+    💾 Disquete (guardando, almacenamiento)
+
+    🗂️ Carpeta (archivos, organización)
+
+    🖨️ Impresora (imprimir)
+
+Iconos de Otros Usos Generales:
+
+    🌍 Globo terráqueo (mundial, global)
+
+    📅 Calendario (fecha, planificación)
+
+    🛒 Carrito de compras (comprar)
+
+    🏁 Bandera de meta (finalizar)
+
+    🚶 Persona caminando (actividad física, trabajo)
+
+    🏃‍♂️ Persona corriendo (actividad, ejercicio)
+
+    🦸‍♂️ Superhéroe (acción destacada)
