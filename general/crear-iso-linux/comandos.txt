@@ -1,0 +1,35 @@
+-- Comando para crear una imagen booteable en un USB desde ubuntu
+    - para ver la ruta de tu dispositivo
+    -- lsblk :: debes verificar el nombre de tu dispositivo en mi caso (sda)
+
+
+-- Hay que desmontar todas la particiones 
+sda           8:0    1  14,6G  0 disk 
+├─sda1        8:1    1   5,8G  0 part /media/jfinol02/USB
+├─sda2        8:2    1     5M  0 part 
+└─sda3        8:3    1   300K  0 part 
+
+
+-- Comando para desmontar las particiones si existen, si no esta montada la particion arrojara el mensaje (umount: /dev/sda2: no montado.)
+    -- sudo umount /dev/sda1
+    -- sudo umount /dev/sda2
+    -- sudo umount /dev/sda3
+
+ 
+-- V erificamos nuevamente con lsblk y notaremos que ha desaparecido el valor -> /media/jfinol02/USB
+sda           8:0    1  14,6G  0 disk 
+├─sda1        8:1    1   5,8G  0 part 
+├─sda2        8:2    1     5M  0 part 
+└─sda3        8:3    1   300K  0 part 
+
+
+-- Completamos el comando
+sudo dd bs=4M if=/home/jfinol02/Descargas/ubuntu-24.04.1-desktop-amd64.iso of=/dev/sda status=progress oflag=sync
+
+-- Resultado de la ejecucion
+
+sudo dd bs=4M if=/home/jfinol02/Descargas/ubuntu-24.04.1-desktop-amd64.iso of=/dev/sda status=progress oflag=sync
+6186598400 bytes (6,2 GB, 5,8 GiB) copied, 895 s, 6,9 MB/s 
+1478+1 records in
+1478+1 records out
+6203355136 bytes (6,2 GB, 5,8 GiB) copied, 896,35 s, 6,9 MB/s
