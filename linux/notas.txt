@@ -1,0 +1,16 @@
+# Estructura de un comando linux
+    
+    -- comando [opciones] [argumentos]
+    -- Las opciones se utilizan para modificar el comportamiento básico de un comando
+    -- Los argumentos se utilizan para proporcionar información adicional (tal como un nombre de archivo o un nombre de usuario)
+
+# Un argumento 
+
+    -- ls (sin opciones ni argumentos)
+    -- listará los archivos y directorios contenidos en el directorio de trabajo actual
+
+    -- ls /etc/pp
+    -- listará el contenido del directorio /etc/ppp en lugar del directorio actual
+
+    -- ls /etc/ppp /etc/ssh (todos son argumentos)
+    -- puede listar el contenido de varios directorios a la vez

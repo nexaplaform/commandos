@@ -1,0 +1,6 @@
+# Comando ls
+    
+    -- ls 
+    -- Lista los archivos y directorios contenidos en el directorio de trabajo
+
+    

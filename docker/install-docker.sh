@@ -4,15 +4,19 @@ echo "Iniciando proceso de instalacion de docker"
 
 # Actualizamos los paquetes 
 sudo apt-get update
-status=$0
+status=$?
 
-./update-message.sh $status "actualizando repositorios"
+./update-message.sh $status "actualizando repositorios para instalacion de docker"
 
 sudo apt-get install ca-certificates curl
 status=$?
 
+./update-message.sh $status " instalacion de ca-certificates curl"
+
 sudo install -m 0755 -d /etc/apt/keyrings
 status=$?
+
+./update-message.sh $status "para dar permisos /etc/apt/keyrings"
 
 
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
@@ -20,6 +24,8 @@ status=$?
 
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 status=$?
+
+./update-message.sh $status "para dar permisos /etc/apt/keyrings/docker.asc"
 
 
 echo \

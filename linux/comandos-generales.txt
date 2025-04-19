@@ -1,0 +1,5 @@
+# Crear un alias
+    -- alias mycal="cal 2014"
+# Instalar firewall y activarlo 
+    -- sudo apt install gufw 
+    -- sudo ufw enable
