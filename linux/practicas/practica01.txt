@@ -1,0 +1,21 @@
+# Comandos
+
+-- whoami           (Para moostrar el usuario actual con el que estamos trabajando)
+-- uname            (Muestra el nombre del kernel del sistema actual)
+-- uname --nodename (Para ver el nodo en el que estamos trabajando en este caso localhost)
+-- uname -n         (Este es el comando abreviado del anterior)
+-- pwd              (Muestra la ruta del directorio actual donde me encuentro parado trabajando)
+-- echo ?????*s     (Muestra los nombre de los archivos que tiene al menos 6 caracteres y terminan en la letra 's')
+-- echo [DP]*       (El primer carácter del nombre de archivo puede ser o bien una D o una P)
+-- echo [!DP]*      (El primer carácter puede ser cualquier carácter excepto una D o P)
+-- echo [D-P]*      (Se define un rango de caracteres, carácteres que comienzen entre la  D y la P)
+-- echo [!D-P]*     (Se define un rango de caracteres, carácter que no comienzen entre la  D y la P)
+-- echo $(date)     (Se usa para que el comando 'date' se ejecuta y no sea interpretado como un literal)
+-- echo `date`      (Se usa para que el comando 'date' se ejecuta y no sea interpretado como un literal)   
+-- echo '`date`'    (Anula las comillas invertidas y muestra el literal el resultado sera `date` dentro de comillas invertidas)
+-- echo \`date\`    (Hace exactamente lo mismo que el comando anterior pero de otra forma)
+-- echo "D*"        (Los comodines no tienen efecto si estan dentro de comillas dobles)
+
+NOTA: Si quieres cambiar el nombre del host de tu máquina lo puedes hacer de esta forma
+-- sudo hostnamectl set-hostname nuevo_nombre_de_tu_maquina
+-- hostnamectl status (Verificar el host con el nuevo nombre)

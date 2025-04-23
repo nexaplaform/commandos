@@ -1,0 +1,61 @@
+ # Controlar la Visualización de la Página man
+
+    -- Return   (o Intro) 	Bajar una línea
+    -- Space    (o Espacio) 	Bajar una página
+    -- /term    (o /término 	Buscar un término
+    -- n 	    Buscar el siguiente elemento de la búsqueda
+    -- 1G       Ir al inicio
+    -- G        Ir al final 
+    -- h        Mostrar la ayuda
+    -- que      Cerrar la página
+
+
+# Las Secciones de la Página man
+
+    -- NAME             (Nombre)
+    -- SYNOPSIS         (Sinopsis)
+    -- DESCRIPTION      (Descripción)
+    -- OPTIONS          (Opciones) 	
+    -- FILES            (Archivos)
+    -- AUTHOR           (Autor)
+    -- REPORTING BUGS   (Reportando Errores)
+    -- COPYRIGHT        (Derechos de Autor)
+    -- SEE ALSO         (Ver También)
+
+    NOTA: Las paginas mas se deviden en 9 secciones
+    -- man 5 passwd   (Muestra  el archivo o comando especificamente de la seccion 5)
+    -- man -f passwd  (Buscar las coincidencias que hay para la pagina man password)
+
+# Buscar Páginas man por una Palabra Clave
+
+    -- man -k passwd    (Lista todas las cohincidencias)
+    
+# Comando info
+
+    -- info ls
+    -- h
+    -- Puedes pararte sobre una opcion del menu y presionar entre
+    -- Con la letra 'u' regresas al nodo principal
+    -- Si presionas las letra 'I' te lleva de nuevo al nodo en el que estabas
+    
+    NOTA: Para navegar por la página info
+
+    -- Flecha abajo ↓ 	Bajar una línea
+    -- Espacio 	Bajar una página
+    -- s 	Buscar un término
+    -- [ 	Ir al nodo anterior
+    -- ] 	Vaya al siguiente nodo
+    -- u 	Subir un nivel
+    -- TABULADOR 	Saltar al siguiente hipervínculo
+    -- INICIO 	Ir a inicio
+    -- FIN 	Ir al final
+    -- h 	Mostrar ayuda
+    -- L 	Cerrar la página de ayuda
+    -- q 	Cerrar el comando info
+
+    -- whereis ls           (Busca la ubicación de un comando)
+    -- locate gshadow       (Comando para encontrar cualquier archivo)
+    -- updatedb             (Comando para actualizar las BD si quiere buscar un archivo que se ha creado el dia de hoy)
+    -- locate -c archivo    (Te muestra la cantidad de archivos que ha encintrado con el nombre que le indicaste)
+    -- locate -c -b archivo (Esta opción sólo incluye los listados que contienen el término de búsqueda en basename del archivo )
+    -- locate -b "\passwd"  (Este carácter limita la salida a los nombres de archivo que coincidan exactamente con el término)

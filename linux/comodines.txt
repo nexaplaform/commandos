@@ -1,0 +1,51 @@
+# Asterisco (*)
+    
+    -- echo /etc/t*         (Listar todos los archivos de esa ruta que empiezan con la letra 't' y tiene cero o mas caracteres despues de la 't')
+    -- echo /etc/*.d        (Mostrar cualquier archivo que termine con el .d)
+    -- echo /etc/r*.conf    (Mostrar cualquier archivo que comienza con la letra 'r' y termina en '.conf')
+
+# Signo de Interrogación (?)
+
+    - echo /etc/t???????                (Muestra los archivos que tienen la letra t al inicio y luego 7 letras)
+    - echo /etc/*????????????????????   (Mostrar los archivos con 20 o mas caracteres en el nombre)
+    - echo /etc/*.???                   (Mostrar cualquier archivo que su extensión tenga tres letras)
+
+# Corchetes [ ]
+
+    - echo /etc/[gu]*   (Muestra cualquier archivo que comienza con el carácter g o u y contiene cero o más caracteres adicionales)
+    - echo /etc/[a-d]*  (Muestra todos los archivos que comiencen con cualquier letra entre e incluyendo a y d)
+    - echo /etc/[0-9]*  (Muestra todos los archivos que contiene al menos un número) 
+
+NOTA: El orden del rango a listar debe ser un order valido, la referencia sera la tabla ASCII para ver el orden 
+
+# Signo de Exclamación (!)
+
+    -- echo [!DP]*  (Mostrará cualquier archivo que no comienza con D o P)
+
+# Las Comillas - Comillas Dobles
+
+    -- echo "/etc/[DP]*"        (Lo que se escribe dentro de las comillas dobles de interpreta como caracteres)
+    -- echo "The path is $PATH" (Permite imprimir varibles junto al texto que se quiere mostrar)
+
+# Comillas Simples (Evitan que el shell interprete algunos caracteres)
+
+    -- echo 'The car costs $100'    (si quieres que el carácter $ simplemente signifique un $)
+
+# Barra Diagonal Inversa
+
+    -- echo the car cost \$100 and path is $PATH    (Hace que el primer valor de $100 se muestre en la forma literal que esta escrito)
+
+# Comilla Invertida     (se utilizan para especificar un comando dentro de un comando)
+
+    -- echo today is `date`     (Te permite ejecutar un comando acompañado de un texto)
+
+# Punto y Coma
+
+    -- cal 1 2015; cal 2 2015; cal 3 2015   (Permite ejecutar varios comando seprados por comas)
+    -- echo 1; echo 2; echo 3
+
+# Ampersand Doble (&&)
+
+    -- ls /ect/xml && echo sucess
+    -- ls /etc/junk && echo sucess
+

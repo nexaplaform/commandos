@@ -1,0 +1,22 @@
+# Los Alias
+
+    
+    -- alias name=command (Nomenclatura para la creación de alias - Este alias es temporal)
+    -- alias (ver los alias existentes)
+    -- alias lh='ls -Shl' (Para crear un alias que muestre una lista larga de archivos, ordenados por tamaño con un tamaño "human friendly")
+
+    * Salida:
+    lh                                                        
+    # total 0                                                                         
+    # drwxr-xr-x 2 sysadmin sysadmin 6 Mar 14  2016 Desktop                           
+    # drwxr-xr-x 2 sysadmin sysadmin 6 Mar 14  2016 Documents                         
+    # drwxr-xr-x 2 sysadmin sysadmin 6 Mar 14  2016 Downloads                         
+    # drwxr-xr-x 2 sysadmin sysadmin 6 Mar 14  2016 Music                             
+    # drwxr-xr-x 2 sysadmin sysadmin 6 Mar 14  2016 Pictures                          
+    # drwxr-xr-x 2 sysadmin sysadmin 6 Mar 14  2016 Public                            
+    # drwxr-xr-x 2 sysadmin sysadmin 6 Mar 14  2016 Templates                         
+    # drwxr-xr-x 2 sysadmin sysadmin 6 Mar 14  2016 Videos
+
+NOTA: Cada shell tiene sus propios alias, asì que si se abren en otra shell puede que no funcionen del todo de la misma forma
+
+

@@ -14,3 +14,96 @@
 
     -- ls /etc/ppp /etc/ssh (todos son argumentos)
     -- puede listar el contenido de varios directorios a la vez
+
+# comando con opciones 
+
+    -- ls -l (Donde -l es la opción) - (-h human-readable)
+    -- En la mayoría de los casos, las opciones pueden utilizarse conjuntamente con otras opciones. Por ejemplo, los comandos ls -l -h ó ls -lh 
+
+NOTAS DE COMANDOS:
+    -- history 5    (Muestra los últimos cinco comandos de la lista del historial)
+    -- !!           (Ejecuta el último comando otra vez)
+    -- ! -5         (Ejecuta el quinto comando desde la parte inferior de la lista de historial)
+    -- !ls          (Ejecuta el comando ls más reciente)
+
+# Agrgar valores a la variable path de forma temporal 
+
+    -- PATH=/usr/bin/custom:$PATH   (El valor de esta variable solo se mantendra mientras tenga la ventana de la shell abierta)
+    -- echo $PATH                   (Para mostrar la ruta nueva que se ha agregado para que se ejecuten los comando contenidos en esta ruta)
+
+# Comando para ver variables de entorno y comando export
+    
+    -- variable1=Sometime           (Crea una variable con el valor asignado sometime)
+    -- export variable1             (Crea una variable de entorno temporal llamada variable1)
+    -- env                          (Lista todas las variables de entorno)
+    -- evn | grep variable1         (Filtra de todas las variables la que se llame variable1)
+    -- export variable2="John Doe"  (Podemos crear y exportar la variable con el comando export)
+    -- unset variable1              (Para eliminar la variable creada de forma temporal)
+
+# Comando which
+
+    -- which date (Para sabe la ruta exacta desde donde se esta ejecutando el comando)
+    
+    * Salida:
+    which date 
+    /usr/bin/date 
+
+# Comando type
+    
+    -- type which (puede utilizarse para determinar la información acerca de varios comandos)
+    
+    * Salida
+    type which 
+    which is hashed (/usr/bin/which) 
+
+    -- which which (Muestra lo mismo que el type which, pero en otro formato)
+
+    * Salida:
+    which which
+    /usr/bin/date 
+
+    -- type echo (puede identificar comandos integrados en el bash (u otro) shell)
+
+    * Salida
+    type echo                                     
+    echo is a shell builtin
+
+    -- which echo (En este caso las salidas son diferentes)
+
+    * Salida
+    which echo
+    /bin/echo
+
+    -- type -a echo (Usando la opción -a, el comando type también puede revelar la ruta de otro comando)
+
+    * Salida 
+    type -a echo 
+    # echo es una orden interna del intérprete de ordenes
+    # echo is /usr/bin/echo
+    # echo is /bin/echo
+
+    -- type ll (Muestra el comando completo relacionado con el alias)
+
+    * Salida
+    type ll
+    # ll is aliased to `ls -alF'
+
+    -- type ls
+
+    * Salida 
+    type ls                                          
+    # ls is aliased to `ls --color=auto'
+
+    -- type -t echo ll which (Para mostrar todos los comando a la misma vez)
+
+    * Salida 
+    type -t echo ll which                  
+    # builtin                                                                
+    # alias                                                             
+    # file
+
+
+
+
+
+
