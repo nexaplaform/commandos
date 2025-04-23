@@ -1,0 +1,46 @@
+# Pasos para instalar kubernetes
+
+1.- Instalar MicroK8s
+    
+    -- sudo snap install microk8s --classic
+
+2.- Añadir tu usuario al grupo microk8s
+
+    -- sudo usermod -a -G microk8s $USER
+    -- sudo usermod -a -G microk8s user-name
+
+3.- Habilitar addons (opcional pero recomendado):
+
+    -- microk8s enable dashboard dns registry storage
+
+4.- Verificar el estado:
+    
+    -- microk8s status --wait-ready
+
+5.- Usar kubectl:
+
+    # Prefijo
+    -- microk8s kubectl get nodes
+
+    # Crear alias (añadir a tu ~/.bashrc o ~/.zshrc para que sea permanente)
+    -- echo 'alias kubectl="microk8s kubectl"' >> ~/.bashrc
+    -- source ~/.bashrc # O source ~/.zshrc
+    -- Reiniciar la maquina
+    -- groups (verificar que el usuario este en el grupo microk8s)
+    -- kubectl get nodes # Ahora puedes usar kubectl directamente
+    
+    -- sudo chown -R nexaplaform /home/nexaplaform/.kube (Asegurarte de que los archivos de configuración tienen los permisos correctos)
+
+6.- Habilitar dashboard
+
+    -- microk8s enable dashboard ingress
+    -- microk8s kubectl create token default    (Obtener el token de autenticación)
+    -- microk8s dashboard-proxy                 (Acceder al Dashboard - Este comando te dará una URL (generalmente http://127.0.0.1:8001/) y te indicará que la abras en tu navegador. Mantén esta terminal abierta, ya que el proxy se ejecuta en ella.)
+
+7.- Crear ingres para la dashboard de kubernetes
+
+    -- microk8s kubectl get service -n kube-system
+        -- Busca el servicio llamado kubernetes-dashboard. Anota el CLUSTER-IP y el PORT 
+        (10.152.183.223 / 443/TCP)
+        -- Crea un archivo (por ejemplo, dashboard-ingress.yaml)
+        -- microk8s kubectl apply -f dashboard-ingress.yaml (Ejecuta este comando para crear el ingress)

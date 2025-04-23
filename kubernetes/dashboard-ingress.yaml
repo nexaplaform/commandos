@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dashboard-ingress
+  namespace: kube-system # El dashboard está en este namespace
+spec:
+  ingressClassName: public # Usa el controlador ingress de MicroK8s
+  rules:
+  - host: dashboard.microk8s # El hostname que usarás para acceder
+    http:
+      paths:
+      - path: /
+        pathType: Prefix # Dirige todo el tráfico bajo /
+        backend:
+          service:
+            name: kubernetes-dashboard # Nombre del servicio del dashboard
+            port:
+              number: 443 # El puerto del servicio al que se conecta Ingress (HTTPS)
