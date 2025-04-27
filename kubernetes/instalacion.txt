@@ -38,3 +38,25 @@ microk8s remove: Desinstala completamente MicroK8s.
  - microk8s kubectl get services
 # Eliminar el deployment
  - microk8s kubectl delete deployment hello-world-deployment
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Configurar Almacenamiento Persistente
+ - microk8s enable storage
+ 
+# Acceso Externo (Ingress): Para acceder a las interfaces web de GitLab, SonarQube, ArgoCD, Grafana, Jenkins y Nexus, necesitarás un Ingress Controller. MicroK8s también tiene un add-on para esto
+
+- microk8s enable ingress
+- microk8s enable dns storage ingress
+
+Verificar almacenamiento 
+- microk8s kubectl get storageclass
+
+Instalar ArgoCD: 
+
+- kubectl create namespace argocd
+- kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+Para iniciarlo de forma temporal (RtFhb2Tv5iIkOFPq)
+- kubectl port-forward svc/argocd-server -n argocd 4040:443 (https://localhost:4040)
+- kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d; echo
